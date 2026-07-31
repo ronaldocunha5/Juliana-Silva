@@ -1480,3 +1480,90 @@ height:350px;
 }
 
 }
+/* ==========================================
+                TRUST
+========================================== */
+
+.trust{
+
+    margin-top:-70px;
+
+    position:relative;
+
+    z-index:20;
+
+}
+
+.trust-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.trust-item{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.trust-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.trust-item h3{
+
+    font-size:2.2rem;
+
+    color:#5F8A68;
+
+    margin-bottom:10px;
+
+}
+
+.trust-item p{
+
+    color:#666;
+
+}
+
+@media(max-width:900px){
+
+.trust{
+
+margin-top:40px;
+
+}
+
+.trust-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.trust-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
