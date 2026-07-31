@@ -1325,3 +1325,124 @@ grid-template-columns:1fr;
 }
 
 }
+/* ==========================================
+            RESULTADOS
+========================================== */
+
+.results{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.results-header{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.results-header h2{
+
+    font-size:3rem;
+
+    margin:20px 0;
+
+}
+
+.results-header p{
+
+    color:#666;
+
+}
+
+.results-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.result-card{
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:#fff;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.result-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.result-card img{
+
+    height:420px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.result-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.result-info{
+
+    padding:28px;
+
+}
+
+.result-info h3{
+
+    color:#5F8A68;
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.result-info p{
+
+    color:#666;
+
+}
+
+@media(max-width:900px){
+
+.results-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.result-card img{
+
+height:350px;
+
+}
+
+}
