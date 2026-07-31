@@ -1567,3 +1567,112 @@ grid-template-columns:1fr;
 }
 
 }
+/* ==========================================
+                JOURNEY
+========================================== */
+
+.journey{
+
+    padding:140px 0;
+
+    background:#F8F9F6;
+
+}
+
+.journey-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.journey-image{
+
+    position:relative;
+
+}
+
+.journey-image img{
+
+    width:100%;
+
+    border-radius:35px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+.journey-text h2{
+
+    font-size:3.2rem;
+
+    margin:20px 0;
+
+    line-height:1.15;
+
+}
+
+.journey-text p{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    font-size:1.05rem;
+
+}
+
+.journey-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-bottom:40px;
+
+}
+
+.journey-item{
+
+    background:white;
+
+    padding:18px 22px;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.journey-item:hover{
+
+    transform:translateX(10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+@media(max-width:900px){
+
+.journey-content{
+
+grid-template-columns:1fr;
+
+}
+
+.journey-text{
+
+text-align:center;
+
+}
+
+}
