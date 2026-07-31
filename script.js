@@ -181,3 +181,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 
 });
+/* ==========================================
+                 FAQ
+========================================== */
+
+const faq = document.querySelectorAll(".faq-item");
+
+faq.forEach(item => {
+
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+
+        item.classList.toggle("active");
+
+    });
+
+});
